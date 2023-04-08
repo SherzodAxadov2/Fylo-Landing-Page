@@ -360,7 +360,15 @@ textarea {
   flex: 1;
   position: relative;
 }
+.contact__input.error span {
+  opacity: 1;
+}
+.contact__input.error input {
+  border: 1px solid #ff4242;
+}
 .contact__input span {
+  opacity: 0;
+  transition: var(--transition);
   position: absolute;
   bottom: -12px;
   left: 36px;
